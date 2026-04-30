@@ -6,9 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Week 3 & 4 Portfolio Project</title>
+    <title>Week 3 and 4 Portfolio Project</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+         <script src="https://cdn.tailwindcss.com"></script>
+
 
     <link rel="stylesheet" href="css/custom.css">
 
@@ -23,6 +25,13 @@
         <div class="order-2 lg:order-1 flex-1 lg:max-w-lg text-center lg:text-left">
 
             <h1 class="text-5xl mb-6">Shalini H R</h1>
+            <!-- GREETING -->
+            <p id="greeting" class="text-lg text-gray-500 mb-2"></p>
+            <!-- TYPING -->
+            <p class="text-2xl font-bold mb-6">
+                I am a <span id="typing-text" class="text-blue-600"></span>
+            </p>
+
 
             <p class="text-xl lg:text-2xl text-slate-600 font-bold mb-10 max-w-md mx-auto lg:mx-0">
                 Full-Stack developer | MERN enthusiast | Competitive Programmer
@@ -30,36 +39,70 @@
 
             <div
                 class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center lg:items-start mb-8">
+                <!-- GEOLOCATION -->
+                <div>
+                    
+                <button id="locateBtn" class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition duration-300">My Location</button>
+    <pre id="out"></pre>
+                <p id="message" class="mt-4 text-gray-700"></p></div>
 
                 <a href="#projects" class="bg-red-400 hover:bg-green-500 px-10 py-4 rounded shadow-xl">
                     View Projects
                 </a>
 
-                <a href="#resume" class="bg-blue-400 hover:bg-green-500 px-10 py-4 rounded shadow-xl">
+                <a href="#resume" src="Shalini HR (1).pdf" class="bg-blue-400 hover:bg-green-500 px-10 py-4 rounded shadow-xl">
                     Download Resume
                 </a>
 
             </div>
+            
 
             <div class="flex flex-wrap gap-6 justify-center lg:justify-start text-sm font-bold">
 
                 <span>800+ Github commits</span>
                 <span>100 LeetCode Questions Solved</span>
                 <span>5 live projects completed</span>
+<!-- Save contact -->
+    <div class="bg-white p-8 rounded-2xl shadow-xl w-96">
 
+        <h2 class="text-2xl font-bold mb-4 text-center">Contact Form</h2>
+
+        <form id="contactForm" class="space-y-4">
+
+            <input type="text" id="name" placeholder="Your Name" class="w-full p-2 border rounded">
+
+            <input type="email" id="email" placeholder="Your Email" class="w-full p-2 border rounded">
+
+            <input type="text" id="message" placeholder="Your Message" class="w-full p-2 border rounded">
+
+        </form>
+
+        <!-- Buttons -->
+        <div class="flex gap-2 mt-4">
+            <button id="clearBtn" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg w-full">
+                Clear Data
+            </button>
+        </div>
+
+        <!-- Status -->
+        <p id="status" class="text-sm text-green-600 mt-3 text-center"></p>
+
+    </div>
             </div>
 
         </div>
 
         <div class="order-1 lg:order-2 w-full lg:w-96 max-w-sm mx-auto lg:mx-0">
 
-            <img src="assets/images/img.jpg" alt="My photo"
+            <img src="myphoto.jpg.jpeg" alt="My photo"
                 class="aspect-square w-full rounded shadow-lg mx-auto lg:mx-0 hover:ring-blue-500 transition-all duration-300 hover:scale-[1.02]"
                 loading="lazy">
 
         </div>
 
     </section>
+
+    
 
     <!-- NAVBAR -->
 
@@ -140,7 +183,73 @@
             </h2>
 
             <!-- existing experience cards remain unchanged -->
-
+<div class="space-y-8">
+                <!-- Card 1 -->
+                <div class="group shadow-2xl rounded-3xl p-8
+                 hover: shadow-4xl transition-all relative overflow-hidden">
+                    <div class="absolute inset-0 bg-blue-400 opacity-0
+                 group-hover: opacity-100 transition-opacity">
+                    </div>
+                    <div class="relative z-10 flex flex-col lg:flex-row lg:items-center 
+                 lg:justify-between gap-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 bg-emarald-400 rounded
+                    flex items-center shadow-2xl">
+                                <span class="text-white font-bold ">VTU</span>
+                            </div>
+                            <div class="font-semibold text-4xl">
+                                B.E in Computer Science(2026)
+                            </div>
+                            <p class="text-md font-semibold">CIT Mandya</p>
+                            <p class="text-md font-semibold text-right">CGPA: 8.5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="group shadow-2xl rounded-3xl p-8
+                 hover: shadow-4xl transition-all relative overflow-hidden">
+                    <div class="absolute inset-0 bg-red-400 opacity-0
+                 group-hover: opacity-100 transition-opacity">
+                    </div>
+                    <div class="relative z-10 flex flex-col lg:flex-row lg:items-center 
+                 lg:justify-between gap-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 bg-emarald-400 rounded
+                    flex items-center shadow-2xl">
+                                <span class="text-white font-bold ">pre-university</span>
+                            </div>
+                            <div class="font-semibold text-4xl">
+                                PCMB(2021)
+                            </div>
+                            <p class="text-md font-semibold">Bharathi Composite PU college</p>
+                            <p class="text-md font-semibold text-right">83%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="group shadow-2xl rounded-3xl p-8
+                 hover: shadow-4xl transition-all relative overflow-hidden">
+                    <div class="absolute inset-0 bg-green-400 opacity-0
+                 group-hover: opacity-100 transition-opacity">
+                    </div>
+                    <div class="relative z-10 flex flex-col lg:flex-row lg:items-center 
+                 lg:justify-between gap-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 bg-emarald-400 rounded
+                    flex items-center shadow-2xl">
+                                <span class="text-white font-bold ">karnataka state board</span>
+                            </div>
+                            <div class="font-semibold text-4xl">
+                                SSLC(2019)
+                            </div>
+                            <p class="text-md font-semibold">Jeevodaya High School</p>
+                            <p class="text-md font-semibold text-right">89%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
         </div>
 
     </section>
@@ -207,6 +316,7 @@
                         <button type="submit" class="flex-1 font-bold py-4 px-6">
                             Submit
                         </button>
+                        <button id="backToTop">↑ Top</button>
 
                     </div>
 
@@ -226,8 +336,18 @@
     <script src="js/features/contact-validation.js"></script>
     <script src="js/features/theme-toggle.js"></script>
     <script src="js/features/project-search.js"></script>
+     <script src="js/features/scrollprogress.js"></script>
+     <script src="js/features/geolocation.js"></script>
+     <script src="js/features/typinganimation.js"></script>
+     <script src="js/features/savecontactformdata.js"></script>
+     <script src="js/features/backtotop.js"></script>
     <script src="js/main.js"></script>
-
+    
+<button id="backToTop"
+  class="hidden fixed bottom-8 left-8 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-blue-700 transition">
+  ↑ Top
+</button>
 </body>
 
 </html>
+
